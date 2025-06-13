@@ -4,8 +4,8 @@
       "type": "custom",
       "candid": "https://github.com/dfinity/ic/releases/download/ledger-suite-icrc-2025-02-27/ledger.did",
       "wasm": "https://github.com/dfinity/ic/releases/download/ledger-suite-icrc-2025-02-27/ic-icrc1-ledger.wasm.gz",
-      "init_arg": "(variant {Init = record { token_symbol = \"icpsc\"; token_name = \"ICP Store Coin\"; minting_account = record { owner = principal \"SUBSTITUIR_POR_ICPSC_MINTER\"}; transfer_fee = 10_000; metadata = vec {}; feature_flags = opt record{icrc2 = true}; initial_balances = vec { record { record { owner = principal \"SUBSTITUIR_POR_ICPSC_INITIAL_BALANCES\"; }; 100_000_000_000; }; }; archive_options = record { num_blocks_to_archive = 1000; trigger_threshold = 2000; controller_id = principal \"SUBSTITUIR_POR_ICPSC_ARCHIVE_CONTROLLER\"; cycles_for_archive_creation = opt 10000000000000; }; } })" 
-    }, 
+      "init_arg": "variant {Init = record { token_symbol = \"icpsc\"; token_name = \"ICP Store Coin\"; minting_account = record { owner = principal \"nsh4t-i7qjw-fgl24-uytjx-4a4fj-npv5o-bwvai-5t3qc-yqlkr-vesnt-iqe\"}; transfer_fee = 10_000; metadata = vec {}; feature_flags = opt record{icrc2 = true}; initial_balances = vec { record { record { owner = principal \"2yhl7-yrzsd-uhsyp-ve2cz-sso2i-qqddd-a3axo-drupa-ubcqm-kpv6q-qae\"; }; 100_000_000_000; }; }; archive_options = record { num_blocks_to_archive = 1000; trigger_threshold = 2000; controller_id = principal \"nsh4t-i7qjw-fgl24-uytjx-4a4fj-npv5o-bwvai-5t3qc-yqlkr-vesnt-iqe\"; cycles_for_archive_creation = opt 10000000000000; }; } }"
+    },
     "icpstore_backend": {
       "main": "src/icpstore_backend/main.mo",
       "type": "motoko"
