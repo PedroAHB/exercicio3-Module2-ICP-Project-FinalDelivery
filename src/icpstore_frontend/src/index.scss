@@ -20,7 +20,7 @@ body {
 
 .grade-cursos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Força 3 colunas */
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
@@ -33,6 +33,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
 }
 
 .imagem {
@@ -57,7 +64,7 @@ body {
 }
 
 .preco {
-  color: #2563eb; /* Azul */
+  color: #2563eb;
   font-weight: 600;
   margin-bottom: 12px;
 }
